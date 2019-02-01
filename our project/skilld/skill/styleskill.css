@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+*{
+  border: box-content;
+}
+
+h2{
+	font-size: 45px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/*---------Search box---------*/
+.search-box{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #10dddd;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+.search-btn{
+	color:#40c06b;
+	float: right;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #058a52;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	transition: 0.4s;
+}
+#search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	transition: 0.4s;
+	line-height: 40px;
+	width: 450px;
+}
+
+/*---------table---------*/
+#myTable {
+  position: relative;
+  border-collapse: collapse;
+  margin-top: 10%;
+  left: 14%;
+	width: 70%;
+	background:url(electrician.png);
+	background-color: #ddebe5;
+	background-repeat:no-repeat;
+	background-size: cover;
+	opacity:0.9;
+  border: 5px double rgb(2, 31, 20);
+  font-size: 18px;
+	font-family: sans-serif;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 2px solid rgb(4, 51, 33);
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #29e48df5;
+}
+#myTable td{
+	color: #000000;
+}
+
+
+
+ 

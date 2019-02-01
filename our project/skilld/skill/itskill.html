@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styleskill.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>INFORMATION TECHNOLOGY</h2>
+        <h3>Search For The Best Trade</h3>
+
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" id="search-txt" onkeyup="myFunction()" name="" placeholder="type here...">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <br><br>
+        <!-- Table contents -->
+        <table id="myTable">
+            <tr class="header">
+                <th style="width:15%;">Name</th>
+                <th style="width:12%;">Reference</th>
+                <th style="width:5%;">Duration</th>
+                <th style="width:15%;">Contact No.</th>
+                <th style="width:12%;">Email</th>
+            </tr>
+            <tr>
+                <td>Machine learning</td>
+                <td>udacity.com</td>
+                <td>3 months</td>
+                <td>8328994795</td>
+                <td>udacity@edu.com</td>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence</td>
+                <td>Unacademy.com</td>
+                <td>3 months</td>
+                <td>8328994795</td>
+                <td>unacademy@edu.com</td>
+            </tr>
+            <tr>
+                <td>Web development</td>
+                <td>Eckovation.com</td>
+                <td>2 months</td>
+                <td>8328994795</td>
+                <td>Eckovation@edu.com</td>
+            </tr>
+            <tr>
+                <td>Android app development</td>
+                <td>udamey.com</td>
+                <td>1 month</td>
+                <td>8328994795</td>
+                <td>udamey@edu.com</td>
+            </tr>
+            <tr>
+                <td>IOT</td>
+                <td>Edex.com</td>
+                <td>4 Months</td>
+                <td>8328994795</td>
+                <td>edexedu.com</td>
+            </tr>
+            <tr>
+                <td>Deep learning</td>
+                <td>udacity.com</td>
+                <td>4 Months</td>
+                <td>8328994795</td>
+                <td>udacity@edu.com</td>
+            </tr>
+            <tr>
+                <td>Core Java</td>
+                <td>Internshala.com</td>
+                <td>1 Months</td>
+                <td>8328994795</td>
+                <td>internshala@edu.com</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>app.mycaptain.in</td>
+                <td>1 months</td>
+                <td>8328994795</td>
+                <td>mycaptain@edu.com</td>
+            </tr>
+           
+        </table>
+        <br><br>
+
+
+        <!-- Search engine -->
+        <script>
+            function myFunction() {
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("search-txt");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }       
+            }
+            }
+        </script>
+        
+    </body>
+</html>

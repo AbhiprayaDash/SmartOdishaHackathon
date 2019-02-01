@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styleskill.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>ELECTRICIAN</h2>
+        <h3>Search For The Best Trade</h3>
+
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" id="search-txt" onkeyup="myFunction()" name="" placeholder="type here...">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <br><br>
+        <!-- Table contents -->
+        <table id="myTable">
+            <tr class="header">
+                <th style="width:15%;">Name</th>
+                <th style="width:12%;">Institution</th>
+                <th style="width:5%;">Duration</th>
+                <th style="width:15%;">Contact No.</th>
+                <th style="width:12%;">Email</th>
+            </tr>
+            <tr>
+                <td>Electrician</td>
+                <td>ITI Hirakud</td>
+                <td>2 years</td>
+                <td>8328994795</td>
+                <td>itihirakud@edu.com</td>
+            </tr>
+            <tr>
+                <td>Electrician</td>
+                <td>ITI Rengali</td>
+                <td>2 years</td>
+                <td>8328994795</td>
+                <td>rengaliiti@edu.com</td>
+            </tr>
+            <tr>
+                <td>Fitter</td>
+                <td>ITI Hirakud</td>
+                <td>2 years</td>
+                <td>8328994795</td>
+                <td>itihirakud@edu.com</td>
+            </tr>
+            <tr>
+                <td>I.T</td>
+                <td>ITI Cutack</td>
+                <td>2 years</td>
+                <td>8328994795</td>
+                <td>iticutack@edu.com</td>
+            </tr>
+            <tr>
+                <td>Blacksmith</td>
+                <td>Dumdum Workshop</td>
+                <td>6 Months</td>
+                <td>8328994795</td>
+                <td>dumdum@edu.com</td>
+            </tr>
+            <tr>
+                <td>Carpentry</td>
+                <td>Dumdum Workshop</td>
+                <td>6 Months</td>
+                <td>8328994795</td>
+                <td>dumdum@edu.com</td>
+            </tr>
+            <tr>
+                <td>Appliance mechanic</td>
+                <td>TATA machineries</td>
+                <td>18 Months</td>
+                <td>8328994795</td>
+                <td>tatamachines@edu.com</td>
+            </tr>
+            <tr>
+                <td>Machinery assembling</td>
+                <td>TATA machineries</td>
+                <td>18 months</td>
+                <td>8328994795</td>
+                <td>tatamachines@edu.com</td>
+            </tr>
+            <tr>
+                <td>Tally</td>
+                <td>ITech Sambalpur</td>
+                <td>8 Months</td>
+                <td>8328994795</td>
+                <td>sbpitech@edu.com</td>
+            </tr>
+            <tr>
+                <td>Billing & Stock Entry</td>
+                <td>ITech Sambalpur</td>
+                <td>3 Months</td>
+                <td>8328994795</td>
+                <td>sbpitech@edu.com</td>
+             </tr>
+             <tr>
+                <td>Photography</td>
+                <td>Sony Click Sambalpur</td>
+                <td>2 Months</td>
+                <td>8328994795</td>
+                <td>sonyclick@edu.com</td>
+            </tr>
+            <tr>
+                <td>Photoshop</td>
+                <td>Sony Click Sambalpur</td>
+                <td>2 Months</td>
+                <td>8328994795</td>
+                <td>sonyclick@edu.com</td>
+            </tr>
+        </table>
+
+        <!-- Search engine -->
+        <script>
+            function myFunction() {
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("search-txt");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }       
+            }
+            }
+        </script>
+        <br><br><br>
+    </body>
+</html>

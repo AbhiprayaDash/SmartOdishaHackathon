@@ -1,0 +1,76 @@
+<?php
+$_post["fname"]; 
+$_post["town"];  
+$_post["phone"];   
+$_post["comment1"];  
+$_post["skills"];  
+ $_post["title"];  
+$_post["cname"];  
+ $_post["loc"];  
+ $_post["exp"];  
+ $_post["join"];  
+$_post["comment2"];  
+$_post["clg"];  
+$_post["degree"];
+$query
+
+?>
+
+
+?><!doctype html>
+<html>
+    <head>
+        <title>Resume.page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styleresume.css">
+    </head>
+    <body>
+        <form class="base">
+            <fieldset class="field">
+                <h1>Create your resume</h1>
+                Name<br>  <input class="bar" type="text" name="fname"><br><br>
+                Town/locality<br> <input class="add" type="text" name="town"><br><br>
+                Phone number<br>  <input class="num" name="age" min="12" max="60"><br><br>
+                DOB <br> 
+                <br><br>
+                Interests<br><br>
+                <textarea class="comment" name="comment" placeholder="Some of your most loved interests..."></textarea>
+                <br><br>
+                Key Skills<br> <input class="key" type="text" placeholder="keyskills, specializations, experyise">
+                <br><br>
+                <h1>Latest Job Details</h1>
+                <br>
+                Job Title<br><input class="bar" type="text" name="title"><br><br>
+                Company<br><input class="bar" type="text" name="fname"><br>
+               <br>
+                Years of experience<br>
+                <select class="exp  ">
+                <option value="0">
+                    ---
+                </option>
+                <option value="0.5">less than 1 year</option>
+                <option value="1"> 1 year</option>
+                <option value="2"> 2 years</option>
+                <option value="3"> 3 years</option>
+                <option value="4"> 4 years</option>
+                <option value="5"> 5 years or more</option>
+                </select>
+                <br><br>
+                date of Joining<br> <input class="num1" type="date">
+                <br><br>
+                Personality<br><br>
+                <textarea class="comment" name="comment" placeholder="Brief description about you..."></textarea>
+                <br><br>
+                <h1>Education</h1>
+                <br>
+                College/University<br> <input class="bar" type="text">
+                <br><br>
+                Degree<br> <input class="bar" type="text"> 
+                <br><br><br>
+                <button class="icl-Button icl-Button--primary icl-Button--lg" type="reset">Reset</button>
+                <br><br>
+                <button class="icl-Button icl-Button--primary icl-Button--lg" type="button">Create Resume</button>
+            </fieldset>
+         
+    </body>
+</html>
